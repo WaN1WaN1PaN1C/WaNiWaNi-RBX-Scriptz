@@ -1,0 +1,10 @@
+getgenv().Ammo = true
+
+while getgenv().Ammo do
+    local player = game:GetService("Players").LocalPlayer
+    local gui = player.PlayerGui.GUI.Client.Variables
+    
+    gui.ammocount.Value = 999
+    gui.ammocount2.Value = 999
+    task.wait()
+end
